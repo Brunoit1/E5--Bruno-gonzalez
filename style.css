@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #65727c;
+}
+
+.color-1 {
+    background-color: #65727c;
+    /* width: 100vw;
+    height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    background-color: white;
+    border-radius: 20px;
+    width: 80%;
+    padding-top: 100px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+    
+}
+    
+
+.clientes {
+    display: flex;
+    margin:0 auto;
+    flex-direction: column;
+    gap: 50px;
+    color: #65727c;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.clientes p {
+padding-bottom: 30px;
+color: black;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.imagenes {
+    border-radius: 20px;
+    width: 300px;
+    height: 200px;
+}
+
+.container-2 {
+background-color: white;
+width: 80%;
+border-radius: 20px;
+margin-top: 150px;
+/* display: flex;
+flex-direction: column; */
+
+}
+
+
+.footer-1 {
+    width:100%;
+    height: 100vh;
+    /* flex-direction: column;
+    display: flex; */
+}
+
+.contacto {
+    padding: 30px ;
+    color: #65727c;
+}
+
+.imagen-html {
+    display: none;
+}
+
+li {
+    list-style: none;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+i {
+    padding-right: 15px;
+}
+
+.lista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    
+    
+}
+
+.lista i {
+    color: #65727c;
+}
+
+.redes {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.color-2 {
+    background-color:#65727c ;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+   
+}
+
+.redes i {
+    color: #65727c;
+}
+
+.imagenes:hover {
+    box-shadow: 0 0 26px rgb(0, 0, 0, 0.6);
+    margin: 50px;
+    width: 300px;
+    height: 300px;
+}
+
+
+
+
+@keyframes cambiarcolor {
+
+    0%{
+        color: #65727c;
+    }
+    
+    100%{
+        color: black;
+    }
+}
+
+.clientes p {
+    animation-name: cambiarcolor;
+    animation-duration: 10s;
+}
+
+
+
+@media (min-width: 1024px) {
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .cards{
+    flex-direction: row;
+}
+
+    .container-2{
+    width: 100%;
+    margin: 0;
+    
+}
+
+
+
+    .imagen-html {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 200px;
+}
+
+    .lista li {
+        font-size: 20px;
+    margin: 20px;
+}
+
+    .redes i {
+   font-size: 25px;
+}
+
+}
